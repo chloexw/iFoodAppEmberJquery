@@ -1,0 +1,18 @@
+<ul class="writeReviews">
+  <li class="rating">
+    <label>Rating</label>
+    <br>
+    {{star-rating starRating=rate maxStars=5 clickable=true}}
+  </li>
+  <li class="name">
+    <label>Name</label>
+    <br>
+    {{input class="formcontrol" type="text" value=name placeholder="Your name"}}
+  </li>
+  <li class="comments">
+    <label>Comment</label>
+    <br>
+    {{textarea class="formcontrol" type="checkbox" value=note placeholder="Your comments"}}
+  </li>
+  </ul>
+<button {{action submit}} class="submitComments" type="submit">Submit Comment</button>

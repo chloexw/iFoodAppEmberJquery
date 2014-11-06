@@ -1,0 +1,13 @@
+<ul class="search-list">
+{{#each}}
+  <li>
+	{{#link-to 'detail' (query-params dishId=dishId)}}
+	<p class="dish-name">{{dishname}}</p>
+	<p class="dish-stuff">{{dishstuff}}</p>
+	{{/link-to}}
+	<p class="likes-number">{{star-rating starRating=likesnumber maxStars=5}}</p>
+	<!--p class="likes-number"><span>{{likesnumber}}</span> &#9829</p-->
+	<img class="dish-image" {{bind-attr src='dishimage'}}/>
+  </li>
+{{/each}}
+</ul>

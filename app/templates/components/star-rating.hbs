@@ -1,0 +1,9 @@
+{{#each star in stars}}
+    <span {{action click star clickable}}>
+      {{#if star.empty}}
+      <span  style="color: #aaa;"> ☆</span>
+      {{else}}
+        <span  style="color: #FFA500;"> ★</span>
+      {{/if}}
+    </span>
+{{/each}}
